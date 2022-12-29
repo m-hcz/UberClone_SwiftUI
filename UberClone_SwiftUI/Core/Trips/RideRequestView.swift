@@ -84,6 +84,7 @@ struct RideRequestView: View {
 							}
 							.padding()
 								
+								
 						}
 						.foregroundColor(rideType == selectedRideType ? .white : .black)
 						.font(.system(size: 16, weight: .semibold))

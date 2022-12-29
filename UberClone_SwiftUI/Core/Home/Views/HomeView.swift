@@ -41,6 +41,11 @@ struct HomeView: View {
 			}
 		}
 		.edgesIgnoringSafeArea(.bottom)
+		.onReceive(LocationManager.shared.$userLocation) { location in
+			if let location = location {
+				print("DEBUG: user location is: \(location)")
+			}
+		}
     }
 }
 
